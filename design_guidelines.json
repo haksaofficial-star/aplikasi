@@ -1,0 +1,121 @@
+{
+  "project_title": "Dashboard Jurnal Keuangan & TG Job Matching - LPK Hakusa Edu Japan",
+  "app_type": "Financial Admin Dashboard & Student Ledger Management",
+  "theme": "Light Mode (Terang, bersih, profesional, presisi tinggi)",
+  "language": "Bahasa Indonesia",
+  "currency": "IDR (Rp)",
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "DM Sans, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "rules": {
+      "H1": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900",
+      "H2": "text-2xl sm:text-3xl font-bold tracking-tight text-slate-800",
+      "H3": "text-xl sm:text-2xl font-semibold text-slate-800",
+      "H4": "text-lg font-semibold text-slate-700",
+      "Body": "text-sm sm:text-base font-normal text-slate-600 leading-relaxed",
+      "Mono_Financial": "font-mono font-medium tracking-tight text-slate-900",
+      "Badge_Label": "text-xs font-semibold tracking-wider uppercase"
+    },
+    "forbidden_fonts": ["Inter for Headings", "Space Grotesk"]
+  },
+  "colors": {
+    "archetype": "Swiss & Precision Finance (Clean Light Theme)",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "surface_secondary": "#F1F5F9",
+    "border": "#E2E8F0",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_muted": "#64748B",
+    "brand_primary": "#1E3A8A",
+    "brand_accent": "#2563EB",
+    "income_green": "#059669",
+    "income_green_bg": "#ECFDF5",
+    "expense_red": "#DC2626",
+    "expense_red_bg": "#FEF2F2",
+    "pending_warning": "#D97706",
+    "pending_warning_bg": "#FFFBEB",
+    "job_matching_purple": "#6366F1",
+    "job_matching_bg": "#EEF2FF",
+    "rules": [
+      "No pure #000000 text, use #0F172A for high contrast readable text.",
+      "Ensure all buttons have explicit text colors on hover (e.g. hover:bg-slate-900 hover:text-white).",
+      "Financial figures must use monospace for clear column alignment and tabular digits."
+    ]
+  },
+  "layout_and_spacing": {
+    "dashboard_grid": "High Density Grid with col-span-1 for stats cards, col-span-2 or 3 for key balance trend charts.",
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "card_padding": "p-5 sm:p-6",
+    "gap": "gap-4 sm:gap-6",
+    "table_density": "Compact to medium row heights with clear column dividers and hover highlight."
+  },
+  "key_features_design": {
+    "ringkasan_dashboard": {
+      "cards": [
+        "Total Pemasukan (Rp)",
+        "Total Pengeluaran (Rp)",
+        "Saldo Berjalan Saat Ini (Rp)",
+        "Total Profit Job Matching (Rp)",
+        "Total Piutang / Kekurangan Siswa TG (Rp)"
+      ],
+      "charts": "Recharts AreaChart for Cashflow Monthly Trend + Donut Chart for Income Category Breakdown"
+    },
+    "jurnal_umum": {
+      "table_columns": ["Tanggal", "No. Transaksi", "Item / Keterangan", "Kategori", "Masuk (Rp)", "Keluar (Rp)", "Saldo Berjalan (Rp)", "Aksi"],
+      "features": ["Form Tambah & Edit Jurnal", "Filter Tanggal & Kategori", "Pencarian Text", "Indikator Auto-Generated (Dari Siswa TG)", "Ekspor Excel/CSV"]
+    },
+    "pemasukan_per_jenis": {
+      "description": "Tab khusus yang secara otomatis mengelompokkan total pemasukan berdasarkan jenis (seperti Job Matching, Kursus Bahasa, DP Pendaftaran, MCU, dll) dengan opsi mengedit/menambah kategori."
+    },
+    "data_siswa_tg": {
+      "table_columns": ["Nama Siswa", "Program / Job Target", "Biaya Job Matching (Rp)", "Total Dibayar (Rp)", "Kekurangan (Rp)", "Pengeluaran Utama (Visa, KTKLN, MCU, TSK)", "Profit Bersih (Rp)", "Status Lunas", "Aksi"],
+      "cost_defaults": {
+        "visa": 2300000,
+        "ktkln": 200000,
+        "mcu": 800000,
+        "tsk_range": "10.000.000 - 20.000.000",
+        "job_matching_range": "28.500.000 - 35.000.000",
+        "expected_profit_range": "8.000.000 - 10.000.000"
+      },
+      "integration_rule": "Memasukkan/mencatat pembayaran siswa TG secara otomatis mencatat 1 baris di Jurnal Umum (Jurnal Masuk) tanpa perlu catat ulang (mencegah double recording)."
+    },
+    "modal_buku_kas_siswa": {
+      "description": "Modal detail rincian pembayaran & pengeluaran individual per siswa TG (Ledger pembayaran masuk & pengeluaran spesifik siswa)."
+    }
+  },
+  "visual_enhancers": {
+    "cards": "White rounded-xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-200",
+    "badges": "rounded-full px-2.5 py-0.5 text-xs font-semibold",
+    "tables": "rounded-xl border border-slate-200 overflow-hidden bg-white shadow-sm",
+    "sticky_header": "bg-white/90 backdrop-blur-md border-b border-slate-200 z-30"
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHN0dWRlbnQlMjBhdmF0YXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3OTEzNjk1NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "student_avatar",
+      "description": "Avatar siswa TG 1 - Pria kemeja denim"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxqYXBhbmVzZSUyMHN0dWRlbnQlMjBhdmF0YXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3OTEzNjk1NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "student_avatar",
+      "description": "Avatar siswa TG 2 - Close up foto siswa"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1754008331179-a363abe9149e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxqYXBhbmVzZSUyMHN0dWRlbnQlMjBhdmF0YXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3OTEzNjk1NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "student_avatar",
+      "description": "Avatar siswa TG 3 - Pria kemeja hitam"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1692266107806-7044c11dc5f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxqYXBhbmVzZSUyMHN0dWRlbnQlMjBhdmF0YXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3OTEzNjk1NzB8MA&ixlib=rb-4.1.0&q=85",
+      "category": "student_avatar",
+      "description": "Avatar siswa TG 4 - Pria kaos putih backpack"
+    }
+  ],
+  "accessibility_and_testing": {
+    "data_testid_rule": "Setiap tombol, input, link, filter, tab, dan angka ringkasan wajib memiliki attribute data-testid (misal: data-testid='add-jurnal-btn', data-testid='student-search-input', data-testid='total-saldo-display').",
+    "toast_notifications": "Gunakan sonner untuk memberikan konfirmasi instan saat entri jurnal ditambah/diedit atau pembayaran siswa dicatat."
+  },
+  "instructions_to_main_agent": "Implementasikan aplikasi dashboard jurnal keuangan LPK Hakusa Edu Japan ini dengan struktur React JS (file .jsx) yang sangat bersih, modular, dapat diedit (full CRUD), terintegrasi otomatis antara modul pembayaran siswa TG dan Jurnal Umum, serta dilengkapi dengan fitur ekspor data, pencarian, dan visualisasi grafik keuangan yang presisi."
+}
