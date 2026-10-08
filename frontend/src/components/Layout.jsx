@@ -15,12 +15,9 @@ const NAV = [
 ];
 
 const Brand = () => (
-  <div className="flex items-center gap-3 px-5 py-6">
-    <img src="/icon-192.png" alt="Hakusa" className="h-10 w-10 rounded-xl shadow-sm" />
-    <div>
-      <p className="font-heading text-[15px] font-extrabold leading-tight text-slate-900">Hakusa Edu Japan</p>
-      <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400">Jurnal Keuangan</p>
-    </div>
+  <div className="px-4 pb-4 pt-5">
+    <img src="/logo-hakusa.png" alt="Hakusa Edu Japan - Work and Study" className="h-auto w-full max-w-[220px]" data-testid="sidebar-logo" />
+    <p className="mt-1 pl-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Jurnal Keuangan</p>
   </div>
 );
 
@@ -60,7 +57,10 @@ export default function Layout() {
         <NavList />
       </aside>
       <header className="sticky top-0 z-30 flex items-center justify-between border-b border-slate-200 bg-white/90 px-4 py-3 backdrop-blur-md lg:hidden">
-        <p className="font-heading font-extrabold text-slate-900">Hakusa Edu Japan</p>
+        <div className="flex items-center gap-2">
+          <img src="/icon-192.png" alt="Hakusa" className="h-8 w-8" data-testid="mobile-header-logo" />
+          <p className="font-heading font-extrabold text-slate-900">Hakusa Edu Japan</p>
+        </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <button className="rounded-lg border border-slate-200 p-2" data-testid="mobile-menu-btn" aria-label="Menu"><Menu className="h-5 w-5" /></button>

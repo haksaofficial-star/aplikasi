@@ -26,6 +26,7 @@ User choices: import JATIM + TG + Job Open sheets (not bangun kantor, N4, N5); a
 
 ## Implemented (2026-10-08)
 - PWA: manifest.json, app icons (192/512/apple-touch, favicon), service worker (skips /api), "Pasang di HP" button with Android/iOS install steps (iteration_3 passed)
+- Customer logo (logo hakusa.jpeg): sakura mark as app/home-screen icon & favicon; full logo in sidebar and login form
 
 ## Backlog
 - P1: fill biaya job matching for imported students (biaya=0 → kekurangan not computed)

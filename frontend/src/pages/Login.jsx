@@ -31,7 +31,7 @@ export default function Login() {
       <div className="grid-bg relative hidden flex-col justify-between overflow-hidden bg-blue-950 p-12 text-white lg:flex">
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-red-500/90" />
         <div className="relative flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white font-heading text-xl font-extrabold text-blue-950">ハ</div>
+          <img src="/icon-192.png" alt="Hakusa" className="h-12 w-12 rounded-xl bg-white p-0.5" data-testid="login-side-logo" />
           <p className="font-heading text-lg font-bold">Hakusa Edu Japan</p>
         </div>
         <div className="relative max-w-md">
@@ -46,6 +46,7 @@ export default function Login() {
       <div className="flex items-center justify-center p-6">
         <form onSubmit={submit} className="fade-up w-full max-w-sm space-y-6" data-testid="login-form">
           <div>
+            <img src="/logo-hakusa.png" alt="Hakusa Edu Japan - Work and Study" className="mb-6 h-auto w-56" data-testid="login-form-logo" />
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900">Masuk</h2>
             <p className="mt-1 text-sm text-slate-500">Hanya untuk akun yang dibuat oleh admin.</p>
           </div>
