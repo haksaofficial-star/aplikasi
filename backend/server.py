@@ -57,6 +57,11 @@ async def startup():
     if not await db.options.count_documents({}):
         await db.options.insert_many([{"type": t, "name": n, "order": i}
                                       for t, names in DEFAULT_OPTIONS.items() for i, n in enumerate(names)])
+    if not await db.meta.find_one({"_id": "excel_import"}):
+        if not await db.transactions.count_documents({}):
+            import import_excel
+            await import_excel.main(False)
+        await db.meta.insert_one({"_id": "excel_import", "at": now_iso()})
 
 
 @app.on_event("shutdown")
