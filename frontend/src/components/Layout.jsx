@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { LayoutDashboard, BookOpen, PieChart, Users, Briefcase, Settings, LogOut, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { useAuth } from "@/context/AuthContext";
+import { InstallApp } from "@/components/InstallApp";
 
 const NAV = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, id: "dashboard" },
@@ -15,9 +16,7 @@ const NAV = [
 
 const Brand = () => (
   <div className="flex items-center gap-3 px-5 py-6">
-    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-900 font-heading text-lg font-extrabold text-white shadow-sm">
-      ハ
-    </div>
+    <img src="/icon-192.png" alt="Hakusa" className="h-10 w-10 rounded-xl shadow-sm" />
     <div>
       <p className="font-heading text-[15px] font-extrabold leading-tight text-slate-900">Hakusa Edu Japan</p>
       <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400">Jurnal Keuangan</p>
@@ -40,6 +39,7 @@ const NavList = ({ onNavigate }) => {
           </NavLink>
         ))}
       </nav>
+      <InstallApp />
       <div className="m-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
         <p className="truncate text-sm font-semibold text-slate-800" data-testid="current-user-name">{user?.name}</p>
         <p className="truncate text-xs text-slate-500">{user?.email}</p>

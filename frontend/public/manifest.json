@@ -1,0 +1,18 @@
+{
+  "short_name": "Hakusa Jurnal",
+  "name": "Jurnal Keuangan Hakusa Edu Japan",
+  "description": "Jurnal keuangan & pembayaran siswa job matching LPK Hakusa Edu Japan",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8fafc",
+  "theme_color": "#1E3A8A",
+  "lang": "id",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
