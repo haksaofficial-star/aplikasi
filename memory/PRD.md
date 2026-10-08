@@ -24,6 +24,9 @@ User choices: import JATIM + TG + Job Open sheets (not bangun kantor, N4, N5); a
 - All of the above; imported 58 TG students (367 tx), 1131 JATIM tx, 15 jobs
 - Tested: iteration_1 (23/23 backend + frontend), iteration_2 (login flow)
 
+## Implemented (2026-10-08)
+- PWA: manifest.json, app icons (192/512/apple-touch, favicon), service worker (skips /api), "Pasang di HP" button with Android/iOS install steps (iteration_3 passed)
+
 ## Backlog
 - P1: fill biaya job matching for imported students (biaya=0 → kekurangan not computed)
 - P1: JATIM and TG sheets may contain the same payments twice (original Excel) — review via buku filter
